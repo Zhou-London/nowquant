@@ -1,0 +1,62 @@
+:root {
+  /* Canvas — deep navy, drawn from the logo monogram */
+  --ink-900: #07080d;
+  --ink-800: #0b0d15;
+  --ink-700: #11141f;
+  --ink-600: #181c2a;
+  --ink-500: #1f2433;
+  --line: rgba(156, 178, 214, 0.12);
+  --line-strong: rgba(156, 178, 214, 0.22);
+
+  /* Type */
+  --fg: #e8ecf4;
+  --fg-dim: #9aa3b8;
+  --fg-faint: #5b637a;
+
+  /* Accent — steel blue from the Q tail */
+  --steel: #8fb4e0;
+  --steel-bright: #b9d4f5;
+  --steel-deep: #4f7cb5;
+
+  /* Semantic */
+  --up: #4ade8a;
+  --up-dim: rgba(74, 222, 138, 0.16);
+  --down: #f0707f;
+  --down-dim: rgba(240, 112, 127, 0.16);
+
+  --font-display: var(--font-display), Georgia, serif;
+  --font-body: var(--font-body), system-ui, sans-serif;
+  --font-mono: var(--font-mono), monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--ink-900);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
